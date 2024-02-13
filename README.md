@@ -27,6 +27,7 @@
 ```
 cd myfrontend
 npm install bulma axios
+npm install vuelidate
 ```
 
 👉 คำสั่ง Run --> ```npm run serve```
@@ -57,6 +58,7 @@ app.listen(3000, () => {
 ```
 ```
 npm install cors
+npm install joi bcrypt
 ```
 
 👉👉 คำสั่ง run คือ ```npx nodemon app.js```
