@@ -6,18 +6,7 @@
   <a href="https://github.com/Intummadee/"><img src="https://readme-typing-svg.herokuapp.com?lines=Node.Js+,+Vue.js+,+Express.js+,+MySQL&center=true&width=500&height=50"></a>
 </p>
 
-<!-- Badges -->
-<p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
-  </a>
-</p>
+
 
 
 
@@ -52,9 +41,10 @@ npm install bulma axios
 # 🎉 ฝั่ง Backend
 ```
 mkdir backend
+cd backend
 npm install express
 ```
-- สร้างไฟล์ app.js แล้วเขียนโค้ดตามนี้
+- สร้างไฟล์ ```app.js``` แล้วเขียนโค้ดตามนี้
 ```javascript
 const express = require('express')
 const app = express()
@@ -70,6 +60,10 @@ npm install cors
 ```
 
 👉👉 คำสั่ง run คือ ```npx nodemon app.js```
+
+
+<img width="100%" src="https://i.imgur.com/SVvgxJF.png" alt="@Josee9988/project-template's">
+
 
 
 <div> 
