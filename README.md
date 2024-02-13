@@ -6,18 +6,7 @@
   <a href="https://github.com/Intummadee/"><img src="https://readme-typing-svg.herokuapp.com?lines=Node.Js+,+Vue.js+,+Express.js+,+MySQL&center=true&width=500&height=50"></a>
 </p>
 
-<!-- Badges -->
-<p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
-  </a>
-</p>
+
 
 
 
@@ -32,12 +21,13 @@
 # 🎉 ฝั่ง FrontEnd
 ```npm install -g @vue/cli``` (การติดตั้ง Vue CLI เป็นขั้นตอนที่ทำเพียงครั้งเดียวเมื่อต้องการใช้งาน Vue CLI ครั้งแรกหรือต้องการอัปเกรดเวอร์ชัน Vue CLI ในภายหลัง หลังจากนั้นสามารถสร้างโปรเจ็กต์ Vue ใหม่โดยใช้คำสั่ง vue createได้เลย โดยไม่ต้องทำการติดตั้ง Vue CLI อีกครั้ ซึ่ง Vue CLI จะเป็น versioin ตาม Node ที่เครื่องตัวเองได้ลงไว้)
 
-⚙️ ```vue create myfrontend```
+⚙️ ```vue create frontend```
 -เลือก Default ([Vue 2] babel, eslint) และกด Enter
 
 ```
 cd myfrontend
 npm install bulma axios
+npm install vuelidate
 ```
 
 👉 คำสั่ง Run --> ```npm run serve```
@@ -52,9 +42,10 @@ npm install bulma axios
 # 🎉 ฝั่ง Backend
 ```
 mkdir backend
+cd backend
 npm install express
 ```
-- สร้างไฟล์ app.js แล้วเขียนโค้ดตามนี้
+- สร้างไฟล์ ```app.js``` แล้วเขียนโค้ดตามนี้
 ```javascript
 const express = require('express')
 const app = express()
@@ -67,9 +58,14 @@ app.listen(3000, () => {
 ```
 ```
 npm install cors
+npm install joi bcrypt
 ```
 
 👉👉 คำสั่ง run คือ ```npx nodemon app.js```
+
+
+<img width="100%" src="https://i.imgur.com/SVvgxJF.png" alt="@Josee9988/project-template's">
+
 
 
 <div> 
