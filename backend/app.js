@@ -1,6 +1,7 @@
 const express = require("express")
-
 const app = express();
+//* ข้อดีของ expressคือ ถ้าใช้แค่ node.js เวลาจะสร้างเว็บ เราต้องไปสร้าง const server = hhtp.createServer ซึ่งมันยุ่งยากกว่ามาก แต่expressมาช่วยประหยัดเวลา ไปได้เยอะเลย
+
 const cors = require('cors')
 app.use(cors())
 
@@ -21,7 +22,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 // const commentRouter = require('./routes/comment')
 // const imageRouter = require('./routes/image')
 
-
+//* ใช้ express กับการ routing เบื้องต้น ใน app.js เป็นการรวม router หรือ path ที่จะใช้ ที่มันกระจัดกระจายไปตามหมวดหมู่หรือตามเว็บแยกเอาไว้ นำมันมารวมกันที่นี่
 const userRouter = require('./routes/user')
 const appointmentRouter = require('./routes/appointment')
 const adminRouter = require('./routes/admin')

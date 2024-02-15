@@ -1,11 +1,9 @@
 <template>
     <section class="py-5 my-5">
 		<div class="container">
-		 
 			<div class="bg-white shadow rounded-lg d-block d-sm-flex">
 				<div class="profile-tab-nav border-right">
-					<div class="p-4">
-						 
+					<div class="p-4"> 
 						<h4 class="text-center">Kiran Acharya</h4>
 					</div>
 					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -16,63 +14,7 @@
 						
 					</div>
 				</div>
-				<div class="tab-content p-4 p-md-5" id="v-pi	lls-tabContent">
-					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
-						 
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-								  	<label>First Name</label>
-								  	<input  v-model="user.fname" readonly class="form-control-plaintext"  type="text" name="answer" value="ddd" />
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-								  	<label>Last Name</label>
-								  	<input  v-model="user.lname" readonly class="form-control-plaintext" type="text" name="answer" value="ddd" />
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-								  	<label>Email</label>
-								  	<input  v-model="user.cust_email" readonly class="form-control-plaintext" type="text" name="answer" value="ddd" />
-									
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-								  	<label>Phone number</label>
-								  	<input  v-model="user.cust_phone" readonly class="form-control-plaintext" type="text" name="answer" value="ddd" />
-								</div>
-							</div>
-							<div class="form-group row">
-								<label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-								 
-								<input type="password" v-model="$v.password.$model" class='form-control ' :class="{'border-danger': $v.password.$error}"  id="inputPassword" >
-                <template v-if="$v.password.$error">
-                  <p class="help is-danger" v-if="!$v.password.complexPassword">Password ควรประกอบด้วย A-Z และตัวเลข 0-9</p>
-                  <p class="help is-danger" v-if="!$v.password.minLength">Password must be at least 4 letters</p>
-                </template>
-								<!-- {{ getPassword }} -->
-								 
-							</div>
-							 
-							 
-						</div>
-						<div>
-							<button class="btn btn-primary" @click="changePassword()">UpdatePassword</button>
-							<!-- <button class="btn btn-light">Cancel</button> -->
-              <p v-if="error!=''" class="px-3 py-2 mb-3 has-text-danger-dark has-background-danger-light">
-                <em>*{{ error }}</em>
-              </p>
-						</div>
-
- 
-						
-						
-						
-					</div>
-				</div>
+				
 			</div>
 		</div>
 		
@@ -122,7 +64,7 @@
   </template>
   
   <script>
-  import { required, email, minLength, sameAs, maxLength } from 'vuelidate/lib/validators'
+  import { minLength } from 'vuelidate/lib/validators'
   import axios from '@/plugins/axios'
   
   function complexPassword (value) {
@@ -139,7 +81,7 @@
       return {
         email: '',
         password: '',
-		    newpassword:'',
+        newpassword:'',
         menu_column: ['Date', 'Hour', 'Doctor', 'Service', 'Status'],
         data: [], 
         error: '',
@@ -178,25 +120,17 @@
 
 	mounted() {
 		// ไปเอา ข้อมูล booking ของ customer คนนี้้
-		 
 		axios.get(`http://localhost:3000/history/${this.$route.params.userId}`)
         .then((res) => {
           console.log("ข้อมูลBookingของcustomer", res.data);
-		  for(let x in res.data){
-                this.data.push(res.data[x])
+          for(let x in res.data){
+      this.data.push(res.data[x])
             }
         })
         .catch((err) => {
           console.log(err);
         });
-
-
 	}
-	
-	 
-
-
-
     }
   </script>
   

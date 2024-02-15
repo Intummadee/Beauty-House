@@ -1,7 +1,7 @@
 const express = require("express");
 const pool = require("../config");
 const Joi = require('joi')
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 const { generateToken } = require("../utils/token");
 const { isLoggedIn } = require('../middlewares')
 
@@ -11,6 +11,7 @@ router = express.Router();
 
 
 
+// * โครงสร้างคำสั่ง app.**method**(path , middleware , callback function) แต่ถ้าใช้ router ก็เปลี่ยนจาก app --> router
 router.get('/user/me', isLoggedIn, async (req, res, next) => {
     // req.user ถูก save ข้อมูล user จาก database ใน middleware function "isLoggedIn"
     res.json(req.user)

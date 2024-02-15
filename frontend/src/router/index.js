@@ -18,12 +18,12 @@ const routes = [
     path: '/Appointment/:userId',
     name: 'Appointment',
     meta: { login: true },
-    component: () => import('../views/web_view/Appointment.vue')
+    component: () => import('../views/web_view/AppointmentPage.vue')
   },
   {
     path: '/signup',
     name: 'signup',
-    component: () => import('../views/Signup.vue')
+    component: () => import('../views/SignupPage.vue')
   },
   {
     path: '/',
@@ -40,7 +40,7 @@ const routes = [
     path: '/account/:userId',
     name: 'account',
     meta: { login: true },
-    component: () => import('../views/web_view/Account.vue')
+    component: () => import('../views/web_view/AccountPage.vue')
   },
 ]
 

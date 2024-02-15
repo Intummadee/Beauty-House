@@ -115,7 +115,7 @@
   
   
   <script>
-  import { required, email, minLength, sameAs, maxLength } from 'vuelidate/lib/validators'
+  import { required } from 'vuelidate/lib/validators'
   import axios from '@/plugins/axios'
    
   // ส่ง falseคือมัน จะแสดงสีแดงที่หน้าเว็บ
@@ -198,7 +198,7 @@
           axios
           .post("http://localhost:3000/booking", data)
           .then((res) => {
-              console.log("Bookเรียบร้อย");
+              console.log("Bookเรียบร้อย", res);
               this.$router.push({path: '/'})
             })
             .catch((err) => {
@@ -218,7 +218,7 @@
   
       },
       watch:{
-        start_date(newVal, oldVal){
+        start_date(newVal){
           // เคลียร์ข้อมูล arrayของ timeทุกครั้ง เมื่อuserเปลี่ยน วันที่ในcalendar
           this.time_all.splice(0,this.time_all.length);
   
@@ -264,7 +264,7 @@
   
   
         },
-        time(newVal, oldVal){
+        time(newVal){
            this.time = newVal.substring(0,2)
         },
       },
