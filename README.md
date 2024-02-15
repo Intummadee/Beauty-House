@@ -64,7 +64,7 @@ npm install joi bcrypt
 👉👉 คำสั่ง run คือ ```npx nodemon app.js```
 
 
-<img width="100%" src="https://github.com/Intummadee/Beauty-House/blob/main/assets/Page.png?raw=true">
+<img width="100%" src="https://raw.githubusercontent.com/Intummadee/Beauty-House/main/assets/Page.png">
 
 
 
