@@ -66,6 +66,13 @@ npm install joi bcrypt
 
 <img width="100%" src="https://raw.githubusercontent.com/Intummadee/Beauty-House/main/assets/Page.png">
 
+# ลงทะเบียนเข้าสู่ระบบ
+<img width="50%" height="60%" src="https://github.com/Intummadee/Beauty-House/blob/main/assets/SignupPage.png?raw=true">
+
+
+
+# ประวัติการจองคิวของลูกค้า
+<img width="70%" src="https://github.com/Intummadee/Beauty-House/blob/main/assets/HistoryPage.png?raw=true">
 
 
 <div> 
